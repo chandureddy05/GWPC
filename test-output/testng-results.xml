@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="3" ignored="0" total="5" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="3494" started-at="2020-05-29T09:30:34Z" finished-at="2020-05-29T09:30:37Z">
+    <groups>
+      <group name="HRMS">
+        <method signature="BusinessComponents.AddCandidates(java.util.Map, org.testng.ITestContext)[pri:4, instance:Scripts.BusinessComponents@363042d7]" name="AddCandidates" class="Scripts.BusinessComponents"/>
+        <method signature="BusinessComponents.AddEmployee(java.util.Map, org.testng.ITestContext)[pri:7, instance:Scripts.BusinessComponents@363042d7]" name="AddEmployee" class="Scripts.BusinessComponents"/>
+        <method signature="BusinessComponents.Leave_AssignLeave(java.util.Map, org.testng.ITestContext)[pri:6, instance:Scripts.BusinessComponents@363042d7]" name="Leave_AssignLeave" class="Scripts.BusinessComponents"/>
+        <method signature="BusinessComponents.PIM_Employees(java.util.Map, org.testng.ITestContext)[pri:5, instance:Scripts.BusinessComponents@363042d7]" name="PIM_Employees" class="Scripts.BusinessComponents"/>
+        <method signature="BusinessComponents.launchURL(java.lang.String, java.lang.String)[pri:2, instance:Scripts.BusinessComponents@363042d7]" name="launchURL" class="Scripts.BusinessComponents"/>
+        <method signature="BusinessComponents.login()[pri:3, instance:Scripts.BusinessComponents@363042d7]" name="login" class="Scripts.BusinessComponents"/>
+        <method signature="BusinessComponents.readProperties(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:Scripts.BusinessComponents@363042d7]" name="readProperties" class="Scripts.BusinessComponents"/>
+      </group> <!-- HRMS -->
+    </groups>
+    <test name="4" duration-ms="3494" started-at="2020-05-29T09:30:34Z" finished-at="2020-05-29T09:30:37Z">
+      <class name="Scripts.BusinessComponents">
+        <test-method status="PASS" signature="readProperties(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:Scripts.BusinessComponents@363042d7]" name="readProperties" duration-ms="3138" started-at="2020-05-29T15:00:34Z" finished-at="2020-05-29T15:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AddEmployee]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[./TestData/TestData.xlsx]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readProperties -->
+        <test-method status="FAIL" signature="launchURL(java.lang.String, java.lang.String)[pri:2, instance:Scripts.BusinessComponents@363042d7]" name="launchURL" duration-ms="10" started-at="2020-05-29T15:00:37Z" finished-at="2020-05-29T15:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at Scripts.BusinessComponents.launchURL(BusinessComponents.java:231)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method status="FAIL" signature="login()[pri:3, instance:Scripts.BusinessComponents@363042d7]" name="login" duration-ms="9" started-at="2020-05-29T15:00:37Z" finished-at="2020-05-29T15:00:37Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at Scripts.BusinessComponents.login(BusinessComponents.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="AddCandidates(java.util.Map, org.testng.ITestContext)[pri:4, instance:Scripts.BusinessComponents@363042d7]" name="AddCandidates" duration-ms="0" started-at="2020-05-29T15:00:37Z" data-provider="data" finished-at="2020-05-29T15:00:37Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:111)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:509)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1293)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1020)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1110)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at Scripts.BusinessComponents.getTestDataFromDataProvider(BusinessComponents.java:479)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:55)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 17 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCandidates -->
+        <test-method status="FAIL" signature="AddEmployee(java.util.Map, org.testng.ITestContext)[pri:7, instance:Scripts.BusinessComponents@363042d7]" name="AddEmployee" duration-ms="0" started-at="2020-05-29T15:00:37Z" data-provider="data" finished-at="2020-05-29T15:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TodayDtae=24.0, DataRequired=Yes, UserName=Bond007, FirstName=Chandu, Testcasename=AddEmployee, LastName=Reddy, confirmpassword=Ramesh1234*@, NickName=Ram, MilitaryStatus=Single, LOB=HRMS, Password=Ramesh1234*@}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@41685680]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at Scripts.BusinessComponents.captureScreenshot(BusinessComponents.java:212)
+	at Scripts.ReusableFunctions.ClickById(ReusableFunctions.java:83)
+	at Scripts.BusinessComponents.AddEmployee(BusinessComponents.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddEmployee -->
+      </class> <!-- Scripts.BusinessComponents -->
+    </test> <!-- 4 -->
+  </suite> <!-- Suite -->
+</testng-results>

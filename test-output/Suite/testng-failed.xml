@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="BrowserType" value="chrome"/>
+  <parameter name="envURL" value="https://opensource-demo.orangehrmlive.com"/>
+  <listeners>
+    <listener class-name="Scripts.TestListener"/>
+    <listener class-name="listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="4(failed)" parallel="tests">
+    <parameter name="TestDataFilePath" value="./TestData/TestData.xlsx"/>
+    <parameter name="TestCaseID" value="AddEmployee"/>
+    <groups>
+      <run>
+        <include name="HRMS"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Scripts.BusinessComponents">
+        <methods>
+          <include name="launchURL" invocation-numbers="0"/>
+          <include name="login"/>
+          <include name="AddCandidates"/>
+          <include name="AddEmployee" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Scripts.BusinessComponents -->
+    </classes>
+  </test> <!-- 4(failed) -->
+</suite> <!-- Failed suite [Suite] -->
